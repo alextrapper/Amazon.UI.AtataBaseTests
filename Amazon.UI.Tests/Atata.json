@@ -1,0 +1,30 @@
+{
+  "driver": {
+    "type": "chrome",
+    "options": {
+      "arguments": [ "start-maximized", "disable-extensions", "disable-infobars", "no-sandbox", "--incognito" ]
+    }
+  },
+  "baseUrl": "https://www.amazon.com/",
+  "culture": "en-US",
+  "baseRetryTimeout": 15,
+  "baseRetryInterval": 0.5,
+  "elementFindTimeout": 15,
+  "elementFindRetryInterval": 0.5,
+  "waitingTimeout": 10,
+  "waitingRetryInterval": 0.5,
+  "verificationTimeout": 9,
+  "verificationRetryInterval": 0.5,
+  "useNUnitTestName": true,
+  "logNUnitError": true,
+  "takeScreenshotOnNUnitError": true,
+  "assertionExceptionType": "NUnit.Framework.AssertionException, nunit.framework",
+  "useNUnitAggregateAssertionStrategy": true,
+  "logConsumers": [
+    {
+      "type": "nunit",
+      "minLevel": "Info",
+      "sectionFinish": true
+    }
+  ]
+}
