@@ -25,14 +25,15 @@ namespace Amazon.UI.Tests
             }
             else
             {
-                //workaround
-                ((IJavaScriptExecutor)AtataContext.Current.Driver).ExecuteScript("document.querySelector('li[id*=price-range]').scrollIntoView()");
+                //In some cases Filter 'Customers Reviews Say' doesn't show
+                searchResultsPage.Filters.PortableBluetoothSpeakerFeatures.SelectFeatureKeyword("Ultra-Portable");
                 searchResultsPage.Search.AddSentenceToSearch("OontZ");
             }
             // d.Click “OontZ Angle 3(3rd Gen)”
             ItemPage itemPage = searchResultsPage.SearchResultsList.OpenItemPage("OontZ Angle 3 (3rd Gen)");
-            
+
             // e.Choose color: “blue”
+            //Most popular color, like 'Blue' lead to Out-Of-Stock
             itemPage.ProductColor.SelectColor("Pink");
 
             // f.Click the “Buy Now” button

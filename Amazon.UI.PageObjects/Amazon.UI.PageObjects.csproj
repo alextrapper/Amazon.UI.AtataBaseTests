@@ -51,8 +51,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PagesControls\SearchResultPageControls\SearchResultsList.cs" />
     <Compile Include="PagesControls\SearchResultPageControls\PortableBluetoothSpeakerFeaturesGroup.cs" />
+    <Compile Include="PagesControls\SearchResultPageControls\SearchResultsList.cs" />
     <Compile Include="PagesControls\SearchResultPageControls\CustomersReviewsSayGroup.cs" />
     <Compile Include="PagesControls\SearchResultPageControls\DepartmentGroup.cs" />
     <Compile Include="PagesControls\SearchResultPageControls\FiltersSidePanel.cs" />
